@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Gallery</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    	<!-- CSS files -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../Css/Header.css" />
+		<link rel="stylesheet" href="../Css/SideNav.css" />
+		<link rel="stylesheet" href="../Css/Home.css" />
+		<link rel="stylesheet" href="../Css/Gallery.css" />
+		<link rel="stylesheet" href="../Css/About.css" />
+		<link rel="stylesheet" href="../Css/Footer.css" />
+	</head>
+	<body>
+
+    	<!-- home section -->
+		<header id="home">
+
+			<!-- logo -->
+			<div class="logo"><a href="#logo">THE GALLERY</a></div>
+
+			<!-- top navigation bar -->
+			<div class="topnav">
+				<ul>
+					<li><a href="#home">HOME</a></li>
+					<li><a href="#gallery">GALLERY</a></li>
+					<li><a href="#about">ABOUT US</a></li>
+					<li><a href="#contact">CONTACT US</a></li>
+				</ul>
+			</div>
+
+			<!-- side navigation bar open button  -->
+			<span onclick="openNav()" class="openbtn">&#9776;</span>
+		</header>
+
+		<!-- side navigation bar -->
+		<div id="sideNav" class="sidenav">
+
+			<!-- side navigation bar close button -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- side navigation bar buttons -->
+			<ul>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#gallery">GALLERY</a></li>
+				<li><a href="#about">ABOUT US</a></li>
+				<li><a href="#contact">CONTACT US</a></li>
+			</ul>
+		</div>
+
+		<!-- hero image -->
+		<div class="hero-image">
+			<div class="hero-text">
+				<h1>Welcome to our Gallery...!</h1>
+			</div>
+		</div>
+
+		<!-- The Gallery Section  -->
+		<div class="gallery" id="gallery">
+			<div class="topic"><h2>GALLERY</h2></div>
+			<hr />
+
+      		<!-- Gallery section navgation -->
+			<div id="myBtnContainer">
+				<button class="btn active" onclick="filterSelection('all')">Show all</button>
+				<button class="btn" onclick="filterSelection('nature')">Nature</button>
+				<button class="btn" onclick="filterSelection('portraits')">Portraits</button>
+				<button class="btn" onclick="filterSelection('architecture')">Architecture</button>
+				<button class="btn" onclick="filterSelection('travel')">Travel</button>
+				<button class="btn" onclick="filterSelection('fineart')">Fine Art</button>
+				<button class="btn" onclick="filterSelection('events')">Events</button>
+				<button class="btn" onclick="filterSelection('closeup')">Close-up</button>
+				<button class="btn" onclick="filterSelection('bnw')">B&W</button>
+			</div>
+
+			<!-- Gallery image Grid -->
+			<div class="row">
+
+				<!-- Gallery Nature -->
+				<div class="column nature">
+					<div class="content">
+						<img src="../Images/NAL1.jpg" />
+					</div>
+				</div>
+				<div class="column nature">
+					<div class="content">
+						<img src="../Images/NAL2.jpg" />
+					</div>
+				</div>
+				<div class="column nature">
+					<div class="content">
+						<img src="../Images/NAL3.jpg" />
+					</div>
+				</div>
+				<div class="column nature">
+					<div class="content">
+						<img src="../Images/NAL4.jpg" />
+					</div>
+				</div>
+				<div class="column nature">
+					<div class="content">
+						<img src="../Images/NAL5.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Portraits -->
+				<div class="column portraits">
+					<div class="content">
+						<img src="../Images/PORT1.jpg" />
+					</div>
+				</div>
+				<div class="column portraits">
+					<div class="content">
+						<img src="../Images/PORT2.jpg" />
+					</div>
+				</div>
+				<div class="column portraits">
+					<div class="content">
+						<img src="../Images/PORT3.jpg" />
+					</div>
+				</div>
+				<div class="column portraits">
+					<div class="content">
+						<img src="../Images/PORT4.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Architecture -->
+				<div class="column architecture">
+					<div class="content">
+						<img src="../Images/ARCH1.jpg" />
+					</div>
+				</div>
+				<div class="column architecture">
+					<div class="content">
+						<img src="../Images/ARCH2.jpg" />
+					</div>
+				</div>
+				<div class="column architecture">
+					<div class="content">
+						<img src="../Images/ARCH3.jpg" />
+					</div>
+				</div>
+				<div class="column architecture">
+					<div class="content">
+						<img src="../Images/ARCH4.jpg" />
+					</div>
+				</div>
+				<div class="column architecture">
+					<div class="content">
+						<img src="../Images/ARCH5.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Travel -->
+				<div class="column travel">
+					<div class="content">
+						<img src="../Images/TASP1.jpg" />
+					</div>
+				</div>
+				<div class="column travel">
+					<div class="content">
+						<img src="../Images/TASP2.jpg" />
+					</div>
+				</div>
+				<div class="column travel">
+					<div class="content">
+						<img src="../Images/TASP3.jpg" />
+					</div>
+				</div>
+				<div class="column travel">
+					<div class="content">
+						<img src="../Images/TASP4.jpg" />
+					</div>
+				</div>
+				<div class="column travel">
+					<div class="content">
+						<img src="../Images/TASP5.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Fine Art -->
+				<div class="column fineart">
+					<div class="content">
+						<img src="../Images/FA1.jpg" />
+					</div>
+				</div>
+				<div class="column fineart">
+					<div class="content">
+						<img src="../Images/FA2.jpg" />
+					</div>
+				</div>
+				<div class="column fineart">
+					<div class="content">
+						<img src="../Images/FA3.jpg" />
+					</div>
+				</div>
+				<div class="column fineart">
+					<div class="content">
+						<img src="../Images/FA4.jpg" />
+					</div>
+				</div>
+				<div class="column fineart">
+					<div class="content">
+						<img src="../Images/FA5.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Events -->
+				<div class="column events">
+					<div class="content">
+						<img src="../Images/EAP1.jpg" />
+					</div>
+				</div>
+				<div class="column events">
+					<div class="content">
+						<img src="../Images/EAP2.jpg" />
+					</div>
+				</div>
+				<div class="column events">
+					<div class="content">
+						<img src="../Images/EAP3.jpg" />
+					</div>
+				</div>
+				<div class="column events">
+					<div class="content">
+						<img src="../Images/EAP4.jpg" />
+					</div>
+				</div>
+				<div class="column events">
+					<div class="content">
+						<img src="../Images/EAP5.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Close-up -->
+				<div class="column closeup">
+					<div class="content">
+						<img src="../Images/MAC1.jpg" />
+					</div>
+				</div>
+				<div class="column closeup">
+					<div class="content">
+						<img src="../Images/MAC2.jpg" />
+					</div>
+				</div>
+				<div class="column closeup">
+					<div class="content">
+						<img src="../Images/MAC3.jpg" />
+					</div>
+				</div>
+				<div class="column closeup">
+					<div class="content">
+						<img src="../Images/MAC4.jpg" />
+					</div>
+				</div>
+				<div class="column closeup">
+					<div class="content">
+						<img src="../Images/MAC5.jpg" />
+					</div>
+				</div>
+
+				<!-- Gallery Black and White -->
+				<div class="column bnw">
+					<div class="content">
+						<img src="../Images/BNW1.jpg" />
+					</div>
+				</div>
+				<div class="column bnw">
+					<div class="content">
+						<img src="../Images/BNW2.jpg" />
+					</div>
+				</div>
+				<div class="column bnw">
+					<div class="content">
+						<img src="../Images/BNW3.jpg" />
+					</div>
+				</div>
+				<div class="column bnw">
+					<div class="content">
+						<img src="../Images/BNW4.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- The About Us Section -->
+		<div class="aboutus" id="about">
+			<div class="about">
+				<h2>ABOUT US</h2>
+				<div class="paragraph">
+					<p>
+						Welcome to The Gallery! We are passionate about capturing and sharing the beauty of the world through photography. Our curated collection of stunning images aims to inspire and evoke emotions. <br />
+
+						With a diverse team of talented photographers, we bring unique perspectives and styles to our gallery. From breathtaking landscapes to candid human moments, our images tell compelling stories. <br />
+
+						Thank you for being a part of our creative adventure. <br />
+
+						-- The Gallery Team --
+					</p>
+				</div>
+			</div>
+		</div>
+
+    	<!-- go to the top button -->
+		<a href="#" class="top">&#8593;</a>
+
+    	<!-- footer section -->
+		<footer id="contact">
+
+			<!-- navigation links in footer -->
+			<div class="navlinks">
+				<a href="#home">HOME</a>
+				<a href="#gallery">GALLERY</a>
+				<a href="#about">ABOUT US</a>
+			</div>
+			
+			<!-- contact us section -->
+			<h2>CONTACT US</h2>
+			<div class="sociallinks">
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-linkedin"></a>
+				<a href="#" class="fa fa-instagram"></a>
+				<a href="#" class="fa fa-pinterest"></a>
+			</div>
+			
+			<br />
+			<br />
+
+			<!-- privacy and Policy -->
+			<div class="privacy">
+				<div class="privacypolicy">
+					<a href="#">Privacy Policy</a>
+					<span>&copy; 2023 The Gallery. All rights reserved.</span>
+				</div>
+			</div>
+		</footer>
+
+		<!-- JavaScript files -->
+		<script src="../JavaScript/SideNav.js"></script>
+		<script src="../JavaScript/Gallery.js"></script>
+	</body>
+</html>

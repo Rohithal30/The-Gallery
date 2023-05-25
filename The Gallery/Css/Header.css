@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    top: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a, .topnav a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 900;
+}
+
+.logo a {
+    border-radius: 30px;
+    border-style: ridge;
+    color: white;
+    transition: 0.5s;
+}
+
+.logo a:hover {
+    color: #f49e1e;
+}
+
+.topnav a {
+    transition: 0.5s;
+    color: gray;
+}
+
+.topnav a:hover , .openbtn:hover {
+    color: #f49e1e;
+}
+
+.logo , .topnav {
+    padding: 10px;
+    margin: 10px;
+}
+
+.topnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.openbtn {
+    color: gray;
+    font-size: 30px;
+    transition: 0.5s;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+    .openbtn {
+        display: block;
+    }
+    .topnav {
+        display: none;
+    }
+}

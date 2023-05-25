@@ -1,0 +1,19 @@
+.about {
+    text-align: center;
+    background-color: #f49e1e;
+    padding: 30px;
+    color: black;
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-weight: bold;
+    font-family: sans-serif;
+    opacity: 0.8;
+}
+
+.about p {
+    opacity: 0.8;
+    font-weight: bold;
+}

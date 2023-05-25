@@ -1,0 +1,48 @@
+.hero-image {
+    top: 30px;
+    position: relative;
+    width: auto;
+    height: 400px;
+    background-image: url('../Images/flower.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+.hero-text {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+
+@media screen and (max-width: 900px) {
+    .hero-text {
+        top: 20%;
+        left: 35%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero-text {
+        top: 20%;
+        left: 20%;
+    }
+}
+
+/* go to the top button */
+.top {
+    text-decoration: none;
+    padding: 20px;
+    font-family: sans-serif;
+    font-size: 40px;
+    color: black;
+    background: #f49e1e;
+    border-radius: 100px;
+    position: sticky;
+    bottom: 20px;
+    margin-top: 100vh;
+    left: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }

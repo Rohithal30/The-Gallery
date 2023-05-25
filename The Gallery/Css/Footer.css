@@ -1,0 +1,98 @@
+footer {
+    background-color: #f49e1e;
+}
+
+footer h2 {
+    padding-top: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+
+footer .sociallinks {
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+  
+.sociallinks a {
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.fa:hover {
+      opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+  
+footer .privacy {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.privacypolicy a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.navlinks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navlinks a {
+    opacity: 0.8;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.5s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 10px;
+}
+
+.navlinks a:hover {
+    color: white;
+}
